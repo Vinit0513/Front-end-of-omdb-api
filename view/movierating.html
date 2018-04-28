@@ -1,0 +1,62 @@
+<div>
+<div class="back-search"><a href="#!/">Back to search</a></div>
+<div class="col-md-12">
+	<div class="col-md-4">
+		<img src=" {{ movieResult.Poster }} " class="img-responsive">
+	</div>
+	<div class="col-md-6">
+		<div class="filter-data text-center">
+			<h3 class="movie-title"> {{ movieResult.Title | uppercase }}</h3>
+			<div class="table-responsive">
+				<table class="table table-striped table-hover table-bordered" >
+					<tbody>
+						<tr>
+							<td>Type</td>
+							<td> {{ movieResult.Type | uppercase }} </td>
+						</tr>
+						<tr>
+							<td>Country </td>
+							<td> {{ movieResult.Country }} </td>
+						</tr>
+						<tr>
+							<td>Year</td>
+							<td>{{movieResult.Year}}</td>
+						</tr>
+						<tr>
+							<td>Box Office Collection</td>
+							<td>{{movieResult.BoxOffice}}</td>
+						</tr>
+						<tr>
+							<td>Runtime </td>
+							<td> {{ movieResult.Runtime }} </td>
+						</tr>
+						<tr>
+							<td>IMDB Rating </td>
+							<td> {{ movieResult.imdbRating }} </td>
+						</tr>
+						<tr>
+							<td> Released date </td>
+							<td> {{ movieResult.Released }} </td>
+						</tr>
+						<tr>
+							<td>Director </td>
+							<td> {{ movieResult.Director }} </td>
+						</tr>
+						<tr>
+							<td>Genre </td>
+							<td> {{ movieResult.Genre }} </td>
+						</tr>
+						<tr>
+							<td>Writer </td>
+							<td> {{ movieResult.Writer }} </td>
+						</tr>
+						<tr>
+							<td></td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+	</div>
+</div>
+</div>
